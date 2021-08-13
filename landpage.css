@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(62, 62, 231);
+  font-family: sans-serif;
+}
+
+#copyright {
+  color: black ;
+  font-size: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 550px;
+}
+
+button {
+  position: absolute;
+  right: 300px;
+  bottom: 400px;
+  font-size: 25px;
+  background-color: whitesmoke;
+  
+}
+button a {
+  text-decoration: none;
+}
+audio {
+  width: 100px;
+  height: 20px;
+}
+
+
+
+#letter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.sample{ font-size: 120px;
+  background: linear-gradient(to right, red, green , orange, violet, cyan, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
