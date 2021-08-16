@@ -12,32 +12,40 @@ body {
 }
 
 button {
-  position: absolute;
-  right: 300px;
-  bottom: 400px;
   font-size: 25px;
   background-color: whitesmoke;
-  
+
 }
-button a {
-  text-decoration: none;
-}
+
 audio {
   width: 100px;
   height: 20px;
 }
 
 
-
-#letter {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-.sample{ font-size: 120px;
+#sample{ 
   background: linear-gradient(to right, red, green , orange, violet, cyan, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+   
 }
+
+#text {
+  display: flex;
+  justify-content: center;
+  font-size: 120px;
+  
+}
+
+#copyrightconteiner{
+  display: flex;
+  justify-content: center;
+  margin-top: 24%;
+}
+
+#buttonconteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
