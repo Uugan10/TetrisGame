@@ -1,10 +1,18 @@
 body {
-  background-color: rgb(62, 62, 231);
+  /* background-color: rgb(62, 62, 231); */
   font-family: sans-serif;
+  background: linear-gradient(
+    to bottom right,
+  
+    #a43cd4fb,
+    #6f00ff,
+    #4400ff
+  );
+
 }
 
 #copyright {
-  color: black ;
+  color: black;
   font-size: 15px;
   position: absolute;
   bottom: 20px;
@@ -14,7 +22,6 @@ body {
 button {
   font-size: 25px;
   background-color: whitesmoke;
-
 }
 
 audio {
@@ -22,30 +29,51 @@ audio {
   height: 20px;
 }
 
-
-#sample{ 
-  background: linear-gradient(to right, red, green , orange, violet, cyan, yellow);
+#sample {
+  background: linear-gradient(
+    to right,
+    red,
+    green,
+    orange,
+    violet,
+    cyan,
+    yellow
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   
 }
 
 #text {
   display: flex;
   justify-content: center;
   font-size: 120px;
-  
 }
 
-#copyrightconteiner{
+#copyrightconteiner {
   display: flex;
   justify-content: center;
   margin-top: 24%;
 }
 
-#buttonconteiner{
+#buttonconteiner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#gamelink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background: transparent
+}
+#gamelink:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+} 
+
+#gamelink:active {
+  box-shadow: none;
+  top: 5px;
+}

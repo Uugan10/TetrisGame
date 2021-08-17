@@ -141,14 +141,14 @@ function rotate(matrix, dir) {
       [matrix[x][y], matrix[y][x]] = [matrix[y][x], matrix[x][y]];
     }
   }
-
+//dir iin talaar yraltsna.
   if (dir > 0) {
     matrix.forEach((row) => row.reverse());
   } else {
     matrix.reverse();
   }
 }
-// playerDrop function ni  
+// playerDrop function ni  buh ymiig shineer ehluuldeg function bna. y ni 20 oos ih bhim bol buh ymiig shineer ehluulne. (player reset, arenasweep, update score gesen functionuudig ajluulna).
 function playerDrop() {
   player.pos.y++;
   if (collide(arena, player)) {
@@ -161,6 +161,7 @@ function playerDrop() {
   dropCounter = 0;
 }
 
+//1
 function playerMove(offset) {
   player.pos.x += offset;
   if (collide(arena, player)) {
