@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>tetris</title>
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
   </head>
 
   <body
     style="background-color: #fc9484; font-family: sans-serif; text-align: center"
   >
     <img
-      src="11222.svg"
-      height="100px"
-      width="100px"
-      style="float: left"
+      src="nester.png"
+      height="75px"
+      width="75px"
+      style="float: left;"
     />
    
 
-    <div id="score" style="font-size: 30px"></div>
+    <div id="score" style="font-size: 40px; font-family: 'Patua One', cursive; color: #ede8d4; display: flex; justify-content: center;" > </div>
     <canvas
       id="tetris"
-      style="border: solid 6.4px #fff; height: 90vh;position: absolute;
-      left: 540px;"
+      style="border: solid 6.4px #ede8d4; height: 90vh;
+      position: absolute;
+      left: 560px;
+      display: flex;"
       width="240px"
       height="400px"
+      
       >
     </canvas>
     <audio controls autoplay loop style="visibility: hidden;">

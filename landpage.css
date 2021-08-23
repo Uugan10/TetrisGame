@@ -4,7 +4,8 @@ body {
 
 #logo{ 
   display: flex;
-  justify-content: flex-end; 
+  justify-content: center; 
+  margin-bottom: 30px;
 }
 
 audio {
@@ -53,46 +54,28 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -50%;
+  bottom: -45%;
   color: #ede8d4;
   font-size: 14px;
 }
 
-#buttonconteiner {
+#playdiv {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-
-#gamelink {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  background: transparent
-}
-
-#gamelink:hover{
-  cursor: pointer;
-  background-color: black;
-  color: white;
-} 
-
-#gamelink:active {
-  box-shadow: none;
-  top: 5px;
-}
-
-
 
 .btn-one {
-	color: #FFF;
+	color: #ede8d4;
 	transition: all 0.3s;
 	position: relative;
+  font-size: 40px;
   
 }
 .btn-one a {
 	transition: all 0.3s;
-  text-decoration: none;
+  
 }
 .btn-one::before {
 	content: '';
@@ -111,9 +94,11 @@ button {
 	border-top-color: rgba(255,255,255,0.5);
 	border-bottom-color: rgba(255,255,255,0.5);
 	transform: scale(0.1, 1);
+  
 }
 .btn-one:hover span {
 	letter-spacing: 2px;
+  
 }
 .btn-one:hover::before {
 	opacity: 1;	
@@ -129,8 +114,25 @@ button {
 	z-index: 1;
 	transition: all 0.3s;
 	background-color: rgba(255,255,255,0.1);
+  
 }
 .btn-one:hover::after {
 	opacity: 0;	
 	transform: scale(0.1, 1);
+ 
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline, none;
+}
+
+a:active {
+  text-decoration: underline, none;
 }
