@@ -54,9 +54,10 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -45%;
+  margin-bottom: 30px;
   color: #ede8d4;
   font-size: 14px;
+  
 }
 
 #playdiv {
