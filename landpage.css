@@ -54,7 +54,7 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 30px;
+  bottom: -45vh;
   color: #ede8d4;
   font-size: 14px;
   
@@ -82,8 +82,8 @@ button {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	width: 100%;
+	left: 25vh;
+	width: 50%;
 	height: 100%;
 	z-index: 1;
 	opacity: 0;
@@ -109,8 +109,8 @@ button {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	width: 100%;
+	left: 25vh;
+	width: 50%;
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
