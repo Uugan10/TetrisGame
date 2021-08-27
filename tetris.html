@@ -2,40 +2,37 @@
 <html lang="en">
   <head>
     <title>Tetris</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link rel="icon" href="iconred.png">
     <link rel="stylesheet" href="tetris.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="iconred.png" />
   </head>
 
-  <body
-    style="background-color: #fc9484; font-family: sans-serif; text-align: center"
-  >
-    <img
-      src="nester.png"
-      height="75px"
-      width="75px"
-      style="float: right;"
-    />
-   
+  <body>
+    <img id="nester" src="nester.png"/>
+    <a href="landpage.html"> <img  id="arrow" src="arrow3.png"> </a>
 
-    <div id="score" style="font-size: 35px; font-family: 'Patua One', cursive; color: #ede8d4; display: flex; justify-content: center;" > </div>
-    <canvas
-      id="tetris"
-      style="border: solid 6.4px #ede8d4; height: 90vh;
-      position: absolute;
-      left: 560px;
-      display: flex;"
-      width="240px"
-      height="400px"
-      
-      >
-    </canvas>
-    <audio controls autoplay loop style="visibility: hidden;">
-
-      <source src="/Users/uuganbaatar/Desktop/Class/Project /Tetris/audio/ingame.mp3" type="audio/mp3">
+    <div id="score"></div>
+    
+    
+     <canvas id="tetris" width="240px" height="400px"> </canvas>
+    
+    <audio controls autoplay loop style="visibility: hidden">
+      <source
+        src="/Users/uuganbaatar/Desktop/Class/Project /Tetris/audio/ingame.mp3"
+        type="audio/mp3"
+      />
     </audio>
-    <script src="tetris.js"> </script>
+
+    <div class="loss-message" id="lossMessage" >
+      <div id="gameover"> GAME OVER </div>
+      <button id="myBtn">Restart</button>
+  </div>
+    
+    <script src="tetris.js"></script>
   </body>
 </html>

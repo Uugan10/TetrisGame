@@ -1,6 +1,7 @@
 const canvas = document.getElementById("tetris");
 const context = canvas.getContext("2d");
 
+const gameOverScreen = document.getElementById("winning-message")
 context.scale(20, 20);
 
 
@@ -28,12 +29,14 @@ function arenaSweep() {
 function collide(arena, player) {
   const m = player.matrix;  // m ni dursee hyanah gej shine matrix uusgej bga.
   const o = player.pos; // o ni bolhoor dursee buulgah gej ashiglana. 
-  for (let y = 0; y < m.length; ++y) {
+  for (let y = 0; y < m.length; ++y) { 
     for (let x = 0; x < m[y].length; ++x) 
    
     {
       if (m[y][x] !== 0 && (arena[y  +o.y] && arena[y + o.y][x + o.x]) !== 0) {
+        
         return true;
+        
       }
     }
   }
@@ -157,6 +160,7 @@ function playerDrop() {
     playerReset();
     arenaSweep();
     updateScore();
+    
   }
   dropCounter = 0;
 }
@@ -171,14 +175,21 @@ function playerMove(offset) {
 
 function playerReset() {
   const pieces = "TJLOSZI";
+  const btn = document.getElementById("myBtn")
   player.matrix = createPiece(pieces[(pieces.length * Math.random()) | 0]);
   player.pos.y = 0;
   player.pos.x =
     ((arena[0].length / 2) | 0) - ((player.matrix[0].length / 2) | 0);
   if (collide(arena, player)) {
-    arena.forEach((row) => row.fill(0));
-    player.score = 0;
-    updateScore();
+    gameOver();
+  
+    btn.onclick = function(){
+      console.log("clicked")
+      lossMessageElement.classList.remove("show")
+      arena.forEach((row) => row.fill(0));
+      player.score = 0;
+      updateScore();
+    } 
   }
 }
 
@@ -203,14 +214,14 @@ let dropInterval = 1000;
 let lastTime = 0;
 function update(time = 0) {
   const deltaTime = time - lastTime;
-
   dropCounter += deltaTime;
   if (dropCounter > dropInterval) {
+    
     playerDrop();
   }
 
   lastTime = time;
-
+   
   draw();
   requestAnimationFrame(update);
 }
@@ -257,3 +268,12 @@ const player = {
 playerReset();
 updateScore();
 update();
+
+
+
+console.log(arena.length)
+
+const lossMessageElement = document.getElementById("lossMessage");
+function gameOver() { 
+  lossMessageElement.classList.add("show");
+}
