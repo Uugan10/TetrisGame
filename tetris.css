@@ -89,7 +89,7 @@ width: 80px;
   }
 
   .loss-message::before {
-    content: '';
+    
     position: absolute;
     bottom: 34vh;
     width: 30%;
@@ -116,7 +116,7 @@ width: 80px;
   }
 
   .loss-message::after {
-    content: '';
+    
     position: absolute;
     bottom: 34vh;
     width: 30%;
