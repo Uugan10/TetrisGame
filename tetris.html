@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Tetris</title>
-    <link rel="stylesheet" href="tetris.css">
+    <link rel="stylesheet" href="tetris.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,14 +13,13 @@
   </head>
 
   <body>
-    <img id="nester" src="nester.png"/>
-    <a href="landpage.html"> <img  id="arrow" src="arrow3.png"> </a>
+    <img id="nester" src="nester.png" />
+    <a href="landpage.html"> <img id="arrow" src="arrow3.png" /> </a>
 
     <div id="score"></div>
-    
-    
-     <canvas id="tetris" width="240px" height="400px"> </canvas>
-    
+
+    <canvas id="tetris" width="240px" height="400px"> </canvas>
+
     <audio controls autoplay loop style="visibility: hidden">
       <source
         src="/Users/uuganbaatar/Desktop/Class/Project /Tetris/audio/ingame.mp3"
@@ -28,11 +27,11 @@
       />
     </audio>
 
-    <div class="loss-message" id="lossMessage" >
-      <div id="gameover"> GAME OVER </div>
+    <div class="loss-message" id="lostMessage">
+      <div id="gameover">GAME OVER</div>
       <a id="myBtn">RETRY?</a>
-  </div>
-    
+    </div>
+
     <script src="tetris.js"></script>
   </body>
 </html>

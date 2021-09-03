@@ -273,7 +273,7 @@ update();
 
 console.log(arena.length)
 
-const lossMessageElement = document.getElementById("lossMessage");
+const lossMessageElement = document.getElementById("lostMessage");
 function gameOver() { 
   lossMessageElement.classList.add("show");
 }
